@@ -1,0 +1,17 @@
+libxxhash0 is packaged in Debian; use the shared library instead of the
+tree shipped with python-xxhash.
+
+Original Author: Ryan Finnie <ryan@finnie.org>
+--- a/setup.py
++++ b/setup.py
+@@ -13,8 +13,8 @@
+ ext_modules = [
+     Extension(
+         'cpython',
+-        ['xxhash/cpython.c', 'deps/xxhash/xxhash.c'],
+-        include_dirs=['deps/xxhash']
++        ['xxhash/cpython.c'],
++        libraries=['xxhash'],
+     )
+ ]
+ 

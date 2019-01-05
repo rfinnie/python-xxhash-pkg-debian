@@ -1,0 +1,21 @@
+Source: python-xxhash
+Section: python
+Priority: optional
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Uploaders: Ryan Finnie <ryan@finnie.org>
+Build-Depends: debhelper (>= 9), python3-setuptools, python3-all-dev, dh-python, libxxhash-dev
+Standards-Version: 4.1.4
+Homepage: https://pypi.org/project/xxhash
+X-Python3-Version: >= 3.6
+
+Package: python3-xxhash
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${python3:Depends}
+Provides: ${python3:Provides}
+Description: extremely fast non-cryptographic hash algorithm - Python 3.x
+ xxHash is an Extremely fast Hash algorithm, running at RAM speed limits. It
+ successfully completes the SMHasher test suite which evaluates collision,
+ dispersion and randomness qualities of hash functions. Code is highly
+ portable, and hashes are identical on all platforms (little / big endian).
+ .
+ This package contains the module for Python 3.x.

@@ -1,0 +1,7 @@
+tmp/
+files
+python3-xxhash
+*.debhelper.log
+*.substvars
+*.debhelper
+.debhelper

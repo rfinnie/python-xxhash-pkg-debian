@@ -1,0 +1,5 @@
+python-xxhash (1.3.0-1) unstable; urgency=medium
+
+  * Initial packaging (Closes: #917541)
+
+ -- Ryan Finnie <ryan@finnie.org>  Sat, 05 Jan 2019 07:30:15 +0000
